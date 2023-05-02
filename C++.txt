@@ -1,0 +1,1521 @@
+C++:
+====
+
+C++ is a cross platform language that can be used to create high-performance applications.
+
+C++ was developed by Bjane stroustrup, as extension to the C language.
+
+The language was updated 4 major times in 2011, 2014 ,2017 and 2020 to
+c++11, C++14, C++17 , C++20.
+
+
+Why Use C++?
+================
+C++ is one of the world's most popular programming languages.
+
+
+C++ can be found in today's operating systems, Graphical User interfaces, and 
+embedded systems.
+
+
+
+Difference Between C and C++:
+=============================
+
+C++ was developed as an extension of C and both languages have almost the same syntax.
+
+The main differences between c and c++ is that C++ support class and Objects,
+whilce C does not.
+
+
+
+C++ Program execution:
+======================
+
+1) A text editor ,like notepad , to write C++ code (save the file with .cpp extension)
+
+
+2)A compiler ,like  GCC , to translate the C++ code into a langauage that the 
+   Computer will understand
+
+
+steps to compile the Cpp program using gcc compiler
+----------------------------------------------------
+
+g++ filename.cpp  ---> 
+
+compiled the program you will get 
+
+ ---> a.exe   in Windows operating system
+
+but in linux  operating system if you compile C++ program
+you will get --> a.out file.
+
+
+to run:
+=======
+
+windows -- a.exe enter
+
+linux --  ./a.out enter
+
+
+
+
+C++ Install IDE:
+================
+
+AN IDE(Integrated Development Environment)  is used to edit and compile the code
+
+In mark we have popular IDE 
+
+Code::Blocks ,Eclipse,Visual Studio, CLIon..etc
+
+
+We will use IDE COde::Block IDE  (mingw-setup.exe).
+
+
+
+Comments
+-------------
+Comments can be used to explain C++ code, and to make it more readable. 
+
+It can also be used to prevent execution when testing alternative code. 
+
+Comments can be singled-lined or multi-lined.
+
+Single-line Comments
+-----------------------
+Single-line comments start with two forward slashes (//).
+
+Any text // and the end of the line is ignored by the compiler (will not be executed).
+
+Multi-line Comments:
+--------------------
+Multi-line comments start with /* and ends with */.
+
+Any text between /* and */ will be ignored by the compiler.
+
+
+Basic Data Types
+=====================
+The data type specifies the size and type of information the variable will store:
+
+DataType	      Size	       	Description
+================================================
+bool(boolean)	1 byte		Stores true or false values
+
+char		1 byte		Stores a single character/letter/number, or ASCII values (note:- value enclosed in single quote)
+
+int		2 or 4 bytes	Stores whole numbers, without decimals
+
+float		4 bytes		Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
+
+double	8 bytes		Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
+
+
+
+
+string : is datatype to store collection of charatcers (note : must include string lib => #include <string>)
+
+
+C++ Variables:
+===============
+Variables are containers for storing data values.
+
+Declaring (Creating) Variables
+==================================
+To create a variable, specify the type and assign it a value:
+
+Syntax:
+-------
+
+type variableName = value;
+
+
+
+Identifiers:
+===============
+All C++ variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+Note: It is recommended to use descriptive names in order to create understandable and maintainable code:
+
+The general rules for naming variables are:
+============================================
+Names can contain letters, digits and underscores
+Names must begin with a letter or an underscore (_)
+Names are case sensitive (myVar and myvar are different variables)
+Names cannot contain whitespaces or special characters like !, #, %, etc.
+Reserved words (like C++ keywords, such as int,cout..) cannot be used as names
+
+
+
+Constants:
+==========
+When you do not want others to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only.
+
+syntax:
+-------
+const type variableName=value;
+
+
+cin:
+----
+cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).
+
+Ex:
+---
+WAP CPP to read the x and y values from keyboad and display it.
+
+
+Operators:
+----------
+Arithmetic operators:- are used to perform common mathematical operations
+
+
++   addition 
+
+-   substraction
+
+*   multiplication
+
+/   division   (it return qutioent)
+
+%   modulus  (it will return remainder)
+
+++  increment
+
+--  decrement
+
+Assignement Operators:
+======================
+
+(=)Assignment operators are used to assgin values to variables.
+
+int x=10
+
+
+ex:
+==
+
+x=2;
+
++=   => x+=3   => x=x+3
+
+-=   => x-=3    => x=x-3 (5-3) 
+
+
+Comparsion Operators:
+=====================
+==                 equal to    ex: a==b
+
+!=         not  equals to
+
+>        greater than   ex : a>b
+
+<       lesser than    ex: a<b
+
+>=      greater than or equal to ex: a>=b
+
+<=      less than or equal to     ex: a<=b
+
+
+Logical Operators:
+==================
+   
+
+&&    logical and    => returns true if both statements are true
+
+||    logical or    => returns trun if one of the statments is true
+
+!     logical not   
+
+
+
+Conditional Statements:
+=======================
+
+if statement:
+============
+
+syntax:
+-------
+
+if(condition){
+
+ //block of code to be executed if the condition is true;
+
+
+}
+
+
+//if condition is false outside the if block statements will be executed
+
+
+Ex:
+---
+Write a cpp program to compare two  numbers by reading values form keyboard using if --statement.
+
+
+
+if..else statement:
+===================
+
+syntax:
+-------
+
+if(condition){
+
+//this block of code to be executed if the condition is true;
+
+
+}else{
+
+//this block of code to be executed if the condition is false;
+
+
+}
+
+
+Ex:
+---
+Write a cpp program to compare two  numbers by reading values form keyboard using if--else statment.
+
+
+
+Multiple Conditions or
+
+if..else if ..statement:
+========================
+
+syntax:
+--------
+
+if(condition1){
+
+//this block of code will be executed if condition1 is true.
+
+}else if(condition 2){
+
+  this block of code will be executed if the condition1 is false and 
+  condition2 is true.
+  
+}else{
+
+    this block of code will be executed if the condition1 is false and
+    condition2 is false.
+}
+
+
+Example:
+========
+
+Write a cpp program to compare the three variables using if..else if statement.
+
+
+
+
+Ternary operator:
+==================
+
+syntax:
+
+variable = condition?expression1:exression2;
+
+note:
+----
+
+if condition true expression1 to be executed.
+
+if condition false expression2 to be executed.
+
+
+Switch Case:
+============
+
+syntax:
+=======
+
+switch(expression){
+
+  case value1:  statements;
+                break;
+  case value2:  statements;
+                break;
+
+case value3:  statements;
+                break;
+
+case valueN:  statements;
+                break;
+
+ default : statments ;(optional)
+            
+
+}
+
+Note:
+=====
+
+The case value should be an int or char.
+
+
+Ex:
+===
+Write a c++ program to perform calucaltion using switch case.
+
+
+
+Loops:
+======
+
+Loops can execute a block of code as long as a specified condition is true.
+
+
+While loop
+dowhile loop
+forloop
+
+
+while loop:
+==========
+
+syntax:
+========
+
+intialization 
+
+
+while(condition){  //untill the condition is true the statements are executed.
+  
+   statements 
+  
+ Increment/decrement
+
+
+}
+
+
+Ex:
+---
+Write a c++ program to print 1 to 10 integers.
+write a c++ program to print multiplication table of 5.
+
+5 X 1 =5
+
+
+do-while loop:
+=============
+
+syntax:
+========
+
+initializtion;
+
+do{
+
+  statements
+  increment/decrement;
+
+}while(condition);
+
+
+note :- the statements are executed atleast one time before checking the condition.
+
+Ex:
+---
+Write a c++ program to print 1 to 10 integers using do-while.
+
+
+
+for Loop:
+=========
+
+syntax:
+
+for(initializtion variable;condition,increment/decrement){
+
+// statements
+}
+
+example:
+=======
+Write a c++ program to print 1 to 10 integers using for loop;
+
+
+break and continue:
+===================
+
+break : to break or exit  the loop execution based on condition.
+
+continue: is used to skip an execution of an statement based on condition.
+
+
+
+Functions:
+------------
+A function is a block of code that performs a specific task.
+
+Dividing a complex problem into smaller chunks makes our program easy to understand and reusable.
+
+Ex:
+
+Suppose we need to create a program to create a circle and color it. We can create two functions to solve this problem:
+
+a function to draw the circle
+a function to color the circle
+
+There are two types of function:
+
+Standard Library Functions: Predefined in C++
+User-defined Function: Created by users
+
+
+syntax:
+=======
+
+returnType functionName(parameter1,paramerters ...N){
+
+   //body of the function.
+
+}
+here:
+-----
+returnType:  int/foat/double/string/void(empty)..
+
+
+to call a funtion:
+===================
+
+int main(){
+
+   funtionName(parameter if any );//calling a function.
+}
+
+
+note:
+=====
+if function return any value should be store into its return type variable.
+
+
+
+Function Declaration and Definition:
+====================================
+
+Function Declaration : the return type, the name of the function and parameters(if any).
+
+ex:
+----
+void greeting();          //function declaration
+int addition(int x,int y);
+
+
+Function Definition:the body of the function (code to be executed)
+
+ex:
+---
+void greeting(){
+    //business logic
+
+}
+
+int addition(int x,int y){
+
+   //business logic.
+
+}
+
+Note:
+----
+
+if a user-defined function  such as void greeting() is declared after the main() function ,an error will occur.
+
+
+However, it is possible to separate the decaration and the definition  of the function  - for code optimization.
+
+
+Default parameters in Functions:
+=======================
+
+we can also use a default parameter value , bu using the equal sign(=)
+
+if we call the function without an argument, it uses the default value.
+
+Note:- A parameter with a default value is often known as an optional parameter.
+
+
+syntax:
+==========
+
+
+returType functionName(parameter=value,parmeter,,,){
+
+//body of the function.
+}
+
+
+Assignment:
+============
+
+what is functionoverloading?
+Write a program in C++ to find the sum of the first 10 natural numbers?
+Write a program in C++ to check whether a number is prime or not?
+Write a program in C++ to find a prime number?
+Write a program in C++ to find the sum of the digits of a given number?
+
+
+Arrays:
+=======
+
+C++ provides a data structure, the array , which stores a fixed-size squential collection 
+of elements of the same type.
+
+An Array is used to store a collection of data of same type(homogenious elements)
+
+
+All Arrays consist of contiguous memory locations.
+
+
+Declaring the arrays :
+======================
+To delcare an array in C++:
+
+type arrayName[size];
+
+
+arraySize must be an integer constant greater than 0
+
+type can be any valid C++ datatype.
+
+
+Ex:
+===
+
+int arr[5];
+
+initializing the array:
+=======================
+ 
+
+declare and initialize:
+
+1) int arr[5] = {10,40,20,49,50};
+
+
+2) int arr[2];
+
+  arr[0]=10;
+  arr[1]=29
+
+3) By using forloop we can initialize an array by using keyboard.
+
+
+Accessing array elements:
+========================
+
+An element is accessed by indexing the array.
+
+This is done by placing the index of the element with in square brackets after the the name of the array.
+
+
+int res = arr[1];
+
+Note:
+----
+
+Array index start at 0.
+
+
+foreach Loop (C++11):
+====================
+ for-each loop introduced in C++11 version in 2011, which is used 
+ exclusively to loop through the elements in an array.
+
+
+syntax;
+------
+for(type variableName : arrayName){
+   
+   //code to be executed.
+
+ }
+
+
+sizeof() operator :
+----------------------
+sizeof() operator returns the size of a type in bytes.
+
+
+
+Multi-dimensional Array:
+-------------------------
+
+syntax for two dimensional array:
+
+
+returnType arrayName[rowsize][colsize];
+
+
+
+C++ String:
+===========
+
+String is collection of characters.
+
+There are two two types of string commonly used in C++
+
+1)String that are object of string class(the standard C++ libary string class)
+
+2)C-string (C-style strings)
+
+
+C-string:
+-------
+
+The collection of characters is stored in the form of arrays.
+
+C-strings are array of type char   --> C-string.
+
+
+Ex:
+----
+
+char str[]="c++";
+
+Here str is a string and it holds 4 characters.
+Although c++ has 3 charactes the null character \0 is added to the end of the string 
+automatically
+
+
+
+C++ supports a functions that manipulate the C-string (null-terminated strings).  --library:  include<cstring>
+---------------------------------------------------------------------------------
+strcpy(s1,s2) :- copyies string s2 into s1;
+strcat(s1,s2) :- concatenates string s2 onti the end of string s1
+strlen(s1) :- returns the length of the string s1
+strcmp(s1,s2)
+strchr(s1,s2)
+strstr(s1,s2)
+
+
+
+Ex:
+===
+C++ program to display a string enterd by user.
+
+
+
+
+
+
+string object:
+==============
+
+In c++ we can also create a string object for holding string.
+
+Unlike using char arrays,string objects has no fixed length, and can be extended as per requirement.
+
+
+to read line of text in string object :
+-------------------------------------
+
+getline(cin->inputstream,string variablename as the location of the line to stored);
+
+
+
+dereferencing operator:
+=========================
+The indirection operator (or dereferencing operator) (*) operates on a pointer, 
+and returns the value stored in the address kept in the pointer variable. 
+
+
+
+Pointers:
+=========
+In C++, a pointer refers to a variable that holds the address of another variable. Like regular variables, pointers have a data type. 
+
+In C++, a pointer variable refers to a variable pointing to a specific address in a memory pointed by another variable.
+
+For example:
+
+a pointer of type integer can hold the address of a variable of type integer.
+
+A pointer of character type can hold the address of a variable of character type.
+
+
+Addresses in C++
+=================
+To understand C++ pointers, you must understand how computers store data.
+
+When you create a variable in your C++ program, it is assigned some space the computer memory. The value of this variable is stored in the assigned location.
+
+To know the location in the computer memory where the data is stored, C++ provides the & (reference) operator. 
+The operator returns the address that a variable occupies.
+
+For example, if x is a variable, &x returns the address of the variable.
+
+Pointer Declaration Syntax
+==========================
+The declaration of C++ takes the following syntax:
+
+datatype *variable_name; 
+datatype* variable_name;//prefered.
+
+
+The datatype is the base type of the pointer which must be a valid C++ data type.
+The variable_name is should be the name of the pointer variable.
+Asterisk used above for pointer declaration is similar to asterisk used to perform multiplication operation. 
+It is the asterisk that marks the variable as a pointer.
+
+Here is an example of valid pointer declarations in C++:
+
+int    *x;    // a pointer to integer
+double *x;    // a pointer to double
+float  *x;    // a pointer to float
+char   *ch     // a pointer to a character
+
+
+Reference operator (&) and Deference operator (*)
+==================================================
+The reference operator (&) returns the variable’s address.
+
+The dereference operator (*) helps us get the value that has been stored in a memory address.
+The indirection operator (or dereferencing operator) (*) operates on a pointer, 
+and returns the value stored in the address kept in the pointer variable. 
+
+
+For example:
+
+If we have a variable given the name num, stored in the address 0x234 and storing the value 28.
+
+The reference operator (&) will return 0x234.
+
+The dereference operator (*) will return 28
+
+
+Modifying or changing the pointer:
+===================================
+
+we can update the pointer variable.
+
+
+Note:
+----
+
+if updated the pointer variable -> corresponding variable also updated.
+
+
+C++ pointer and arrays:
+=======================
+Pointers are variables that hold addresses of the other variables.
+Not only can a pointer store the address of a single variable, it can store the
+address of cells of an array.
+
+Example:
+--------
+int *ptr;
+int arr[5];   
+
+//arr[0]
+//arr[1]
+//arr[2]
+//arr[3]
+//arr[4]
+//store the address of the first element of arr in ptr.  
+
+ptr=arr  or ptr=&arr[0]   //it will assign first element cell address into ptr.
+
+Point to every array element:
+=============================
+if ptr points to first element in the above code then 
+
+ptr+3 will point to the fourth element .
+
+
+Ex:
+===
+int *ptr;
+int arr[5];   
+
+ptr=arr;   //it is equivalent to &arr[0]
+
+ptr+1 ;   //it is equivalent to &arr[1]
+ptr+2 ;   //it is equivalent to &arr[2]
+ptr+3 ;   //it is equivalent to &arr[3]
+ptr+4 ;   //it is equivalent to &arr[4]
+
+
+similiary we can access the elements 
+using the single pointer.
+
+*ptr==arr[0];
+
+*(ptr+1) //it equivalent to arr[1]
+*(ptr+2) //it equivalent to arr[2]
+*(ptr+3) //it equivalent to arr[3]
+*(ptr+4) //it equivalent to arr[4]
+
+
+Assignment:
+===========
+	1)Passing Pointers to Functions
+	2)Passing Pointers to Functions
+ 	3)Pointer to Pointer
+	4)Array of Pointers
+	5)Null Pointers
+
+
+
+To define a function outside the class definition, you have to declare it inside the class and then define it outside of the class. This is done by specifiying the name of the class, followed the scope resolution :: operator, followed by the name of the function.
+
+
+Classes and Objects:
+====================
+we learned about functions and variables. Sometimes it's desirable to put related functions and data in one place so that it's logical and easier to work with.
+
+Suppose, we need to store the length, breadth, and height of a rectangular room and calculate its area and volume.
+
+To handle this task, we can create three variables, say, length, breadth, and height along with the functions calculateArea() and calculateVolume().
+
+However, in C++, rather than creating separate variables and functions, we can also wrap these related data and functions in a single place (by creating objects). This programming paradigm is known as object-oriented programming.
+
+
+But before we can create objects and use them in C++, we first need to learn about classes.
+
+
+Object:
+-------
+Object is anything which exist phyiscally in real world which contain properties and actions.
+
+To repressent object Properties and actions(behaviour)  we need class.
+
+Example:
+--------
+chair is an object ,which contain properties and actions(behaviour)
+
+properties : wheels,handle
+
+actions : movieable,seatAdjustable.
+
+Above properties and actions will represnt in class.
+
+properites we can represent as a variables in class.
+actions we can represnt as a funtions in class
+
+
+class Chair{
+
+   int wheels;   //data memebers
+    int handle;  //
+
+
+     void movieable(){  //memeber functions
+         ///logic
+     }
+
+    void seatAdjustable(){
+
+      //logice
+    }
+}
+
+
+
+
+
+C++ Class
+===========
+A class is a blueprint for the object.
+
+We can think of a class as a sketch (prototype) of a house. 
+
+It contains all the details about the floors, doors, windows, etc. Based on these descriptions we build the house. House is the object.
+
+syntax of class:
+================
+class className {
+   // some data members.
+   // some member functions
+};
+
+C++ Objects
+============
+When a class is defined, only the specification for the object is defined; no memory or storage is allocated.
+
+To use the data and access functions defined in the class, we need to create objects.
+
+Syntax to Define Object in C++
+===============================
+
+className objectVariableName;
+
+Access Data Members and Member Functions:
+=========================================
+
+We can access the data members and member functions of a class by using a . (dot) operator. 
+
+objectName.datamember;
+
+objectname.funtionName();
+
+
+Constructors:
+-------------
+A constructor is a special type of member function whose name is same as classname.
+
+has the same name as the class
+
+does not have a returntype and  access modifier is public
+
+
+ex:
+===
+
+class Car{
+
+    //defining a constructor
+   public:
+    
+   Car(){
+
+    //here we can write a code to initialize the datamembers.
+  }
+
+
+}
+
+Note:
+=====
+
+Constructors will be called automatically when an object is created.
+
+
+Type of Constructors:
+====================
+Default Constructor
+Parameterised Constructor
+
+
+
+
+Define a function oustide a class
+=================================
+
+To define a function outside the class definition, you have to declare it inside the class and then define it outside of the class. This is done by specifiying the name of the class, followed the scope resolution :: operator, followed by the name of the function.
+
+
+class Ex{
+
+public:
+   void methodOne();
+
+};
+
+void Ex::methodOne(){
+
+
+}
+
+
+Access Modifiers:
+=================
+In C++ there are there modifiers:
+
+public: members are accessible from outside the class.
+
+private : members cannot be accessed from outside the class.
+
+protected : members cannot be accessed from outside the class.
+            we can be accessed with help of inherited class.
+
+
+Note:
+=====
+If don't specify any access modifier in  class,by default all the members  of a class are private.
+
+
+Encapsulation:
+==============
+Encapusulation is an object oriented programming concept that binds 
+together data and fucntion(class) manipulate the data, and that keeps both safe from
+outside inteference and missue. 
+Data encapsulation led to the important OOp concept of data hiding.
+
+the meaning of encapsulation is to make sure that sensitive data is hidden from users.
+to acheive this you must delcare class members(variables) as private.
+
+we want other to read or modify the private memebrs with the help of  get and set functions.
+
+
+
+Inheritance:
+============
+Inheritance is a processing of acquiring the data members and members functions 
+from Parent Class(super) to Child Class(subclass).
+
+inheritance we will use : symbol to derived from base class
+
+It allows us to create a new class(derived class) from an existing class(base class).
+
+The derived class inherits the features from the base class and can have
+addiiton feature of its own. 
+
+The avdantage of inheritance code reuseability.
+
+For Example:
+=============
+
+class Animal{
+
+    //eat() function
+    //sleep() function.
+
+} //base class
+
+
+class Dog: public Animal{  //dervied class
+
+    //derived the features of Animals class
+    //it have its own features.
+
+    //bark() function.
+
+}
+
+
+inheritance is also know as is-a relation.
+
+we use inheritance only if an is-a relation ship present between
+the two class.
+
+examples:
+---------
+A car is a vehice.
+
+Orange is a fruit.
+
+A dog is an animal
+
+
+Multiple inheritance:
+=====================
+
+one base class one or more derived classes.
+
+class A{
+
+}
+
+class B{
+
+}
+
+class C: public A, public B{
+
+ //derived the features (datamembers and member functions of A and B);
+
+ // it own features.
+
+
+
+}
+
+Multilevel inheritance:
+=======================
+
+ex:
+===
+
+class A {
+
+}
+
+class B: public A{
+
+
+}
+
+class C: public C{
+
+ 
+
+}
+
+
+
+Function Overloading:
+=====================
+
+A class can contain one or more function with same name but difference in Number of parameters/type of parameters.
+
+
+Function Overriding:
+===================
+the same function is defined in both the derived class and the based class.
+
+Now if we call this function using the object of derived class, the function of the derived class is executed.
+is called function overriding.
+
+
+Access overriden function in c++:
+================================
+1)To access the overriden function of the base class we use the scope resolution operator ::.
+
+ syntax:
+  derviedclassobject.BaseclassName::overridenmethod();
+
+2) we can also access the overriden function by using a pointer of the base class to point an object of the
+derived class and calling the function that pointer.
+
+
+
+Exception handling:
+==================
+
+An exception is an unexpected or unwanted event that occurs during program exectuion.
+
+ex:
+===
+invalid 
+
+div_by_zero=7/0;
+
+
+In C++ we handle exceptions with the help of try and catch blocks,
+along with the throw keyword.
+
+
+1)try:-- code that may raise an exception.
+
+
+2)throw :- throws an exception  when an error is detected.
+
+
+3)catch : code that handles the exception thrown by the throw keyword.
+
+
+syntax for exception handling:
+===============================
+
+
+try{
+
+  //code that may raise an exception.
+  throw argument
+
+}catch(exception ){
+   //code to handle exception.
+
+}
+
+
+Operator overloading:
+=====================
+Operator overloading is a compile-time polymorphism in which the operator is overloaded to provide the special meaning to the user-defined data type(Class). Operator overloading is used to overload or redefines most of the operators available in C++. 
+
+It is used to perform the operation on the user-defined data type. For example, C++ provides the ability to add the variables of the user-defined data type that is applied to the built-in data types.
+
+In C++, we can change the way operators work for user-defined types like objects and structures. This is known as operator overloading. For example,
+
+Suppose we have created three objects c1, c2 and result from a class named Complex that represents complex numbers.
+
+Since operator overloading allows us to change how operators work, we can redefine how the + operator works and use it to add the complex numbers of c1 and c2 by writing the following code:
+
+result = c1 + c2;   //internally it performs c1.add(c2)
+
+syntax:
+=======
+returnType operator symbol (){
+
+}
+
+Things to Remember in C++ Operator Overloading:
+======================================
+1)Two operators = and & are already overloaded by default in C++. For example, to copy objects of the same class, we can directly use the = operator. We do not need to create an operator function.
+
+2)Operator overloading cannot change the precedence and associativity of operators. However, if we want to change the order of evaluation, parentheses should be used.
+
+3)There are 4 operators that cannot be overloaded in C++. They are:
+:: (scope resolution)
+. (member selection)
+.* (member selection through pointer to function)
+?: (ternary operator)
+
+
+
+Binary Operator:
+===============
+Binay operators work on two operands.
+
+For example:
+====
+
+result = num1+num2; //on types, int,float ,double...
+
+
+2)When we overload the binary operator for user-defined types by using the code:
+
+  obj3=obj1+obj2;   // obj1.add(obj2)
+
+This operator function is called using obj1 and obj2 is passed as on argument to the Operator overload function.
+
+
+
+Pre-Increment Operator in C++:
+=============================
+As the name suggests, the pre-increment operator alters the value of the variable before using it in any expression. Therefore, we can say that the pre-increment operator increases the value of the variable first and then use it in the expression.
+
+Syntax:
+
+b = ++a;
+For example, if the initial value of a were 5, then the value 6 would be assigned to b.
+
+
+Post-Increment Operator in C++:
+===============================
+The post-increment operator is used when it is required to increment the value of the variable after evaluating the expression. Therefore, in post-increment value and then it is incremented.
+
+Syntax:
+
+b = a++;
+
+For example, assume the initial value of a to be 5. Then after executing the above statement the final value of b will be 5 as the value of a will be incremented after performing the expression.
+
+
+
+File Handling In C++
++++++++++++++++++++++
+Files are used to store data in a storage device permanently. File handling provides a mechanism to store the output of a program in a file and to perform various operations on it.
+
+A stream is an abstraction that represents a device on which operations of input and output are performed. A stream can be represented as a source or destination of characters of indefinite length depending on its usage.
+
+In C++ we have a set of file handling methods. These include ifstream, ofstream, and fstream. These classes are derived from fstrembase and from the corresponding iostream class. These classes, designed to manage the disk files, are declared in fstream and therefore we must include fstream and therefore we must include this file in any program that uses files.
+
+In C++, files are mainly deal by using three classes fstream, ifstream, ofstream.
+
+ofstream: This Stream class signifies the output file stream and is applied to create files for writing information to files
+
+ifstream: This Stream class signifies the input file stream and is applied for reading information from files
+
+fstream: This Stream class can be used for both read and write from/to files.
+		All the above three classes are derived from fstreambase and from the corresponding iostream class and they are designed specifically
+	      to manage disk files.
+
+C++ provides us with the following operations in File Handling:
+
+Creating a file: open()
+Reading data: read()
+Writing new data: write()
+Closing a file: close()
+Moving on with article on File Handling in C++
+
+Opening a File
+Generally, the first operation performed on an object of one of these classes is to associate it to a real file. This procedure is known to open a file.
+
+We can open a file using any one of the following methods:
+1. First is bypassing the file name in constructor at the time of object creation.
+2. Second is using the open() function.
+
+To open a file use
+
+1
+open() function
+Syntax
+
+1
+void open(const char* file_name,ios::openmode mode);
+
+Here, the first argument of the open function defines the name and format of the file with the address of the file.
+
+The second argument represents the mode in which the file has to be opened. The following modes are used as per the requirements.
+
+Modes	Description
+in
+
+Opens the file to read(default for ifstream)
+
+out
+
+Opens the file to write(default for ofstream)
+
+binary
+
+Opens the file in binary mode
+
+app
+
+Opens the file and appends all the outputs at the end
+
+ate
+
+Opens the file and moves the control to the end of the file
+
+trunc
+
+Removes the data in the existing file
+
+nocreate
+
+Opens the file only if it already exists
+
+noreplace
+
+Opens the file only if it does not already exist
+
+Example
+
+fstream new_file;
+new_file.open(“newfile.txt”, ios::out);
+
+In the above example, new_file is an object of type fstream, as we know fstream is a class so we need to create an object of this class to use its member functions. So we create new_file object and call open() function. Here we use out mode that allows us to open the file to write in it.
+
+Default Open Modes :
+
+ifstream ios::in
+ofstream ios::out
+fstream ios::in | ios::out
+
+
+C++ STL
+========
+STL stands for Standard Template Library. Alexander Stepanov invented it in 1994, and later it was included in the standard library. The standard library consists of a set of algorithms and data structures that were originally part of the C++ Standard template library.
+
+STL helps in storing and manipulating objects, and it makes the program reusable and robust.
+
+Components of STL
+==================
+STL has  major components:
+
+Containers
+Iterators
+Algorithms
+
+
+Containers
+===========
+If you are dealing with many elements, then you need to use some sort of container.
+
+The container can be described as objects that are used to store the collection of data. 
+
+It helps in recreating and implementing complex data structures efficiently.
+
+Now, containers are further classified into three categories:
+
+Sequence containers: These are used to implement sequential data structures like a linked list, array, etc.
+
+Associative containers: These are those containers in which each element has a value that is related to a key. They are used to implement sorted data structures, for example, set, multiset, map, etc.
+
+Containers adapters: Container adapters can be defined as an interface used to provide functionality to the pre-existing containers.
+
+Sequence Container:
+====================
+Vectors: Vectors can be defined as a dynamic array or an array with some additional features.
+Syntax:
+Vector<int> v;
+
+
+Deque: Deque is also known as a double-ended queue that allows inserting and deleting from both ends; they are more efficient than vectors in case of insertion and deletion.
+Syntax:
+
+Deque<int> d;
+
+List: List is also the sequential container and allows non-contiguous allocation. It allows insertion and deletion anywhere in the sequence.
+Syntax:
+ List<int> l;
+
+
+Associative Container:
+======================
+Set: It is an associative container that is used to store elements that are unique.
+Syntax:
+
+Set<int> s;
+
+Multiset: This container is similar to that of the set container; the only difference is that it stores non-unique elements. 
+Syntax:
+
+multiset<int> ms;
+
+Map: Map container contains sets of key-value pairs where each key is associated with one value.
+Syntax:
+
+Map<int,int> m;
+
+Here, the int is the key type, and the int is the value type.
+
+Multimap: These containers also store key-value pairs, but unlike maps, they can have duplicate elements.
+Syntax:
+ 
+multimap<int,int> mm;
+
+
+Container Adapter:
+===================
+Stack: Stack follows the last-in, first-out(LIFO) approach that means new elements are added at the end and removed from that end only.
+Queue: Queue follows the first-in, first-out(FIFO) approach, which means new elements are added from the end and removed from the front.
+
+
+Iterators 
+==========
+Iterators are used to access data in the containers, and it helps in traversing through elements of containers using its functions. They can be incremented and decremented as per choice and help in the manipulation of data in the container.
+
+Iterator functions are:
+
+begin(): This function points the iterator to the first element of the container.
+end(): This function points the iterator to the last element of the container.
+
+
+Algorithms:
+============
+In STL, different types of algorithms can be implemented with the help of iterators. Algorithms can be defined as functions applied to the containers and provide operation for the content of the container. for example : sort(), swap(), min(), max() etc.
+
+Types of algorithms:
+
+Modifying algorithms
+Non-modifying algorithms
+Sorting algorithms
+Searching algorithms
+Numeric algorithms
+
+
+
+
+
+
+lower_bound(const g):Returns an iterator to the first element that is equivalent to ‘g’ or definitely will not go before the element ‘g’ in the set.
+
+upper_bound(const g):Returns an iterator to the first element that will go after the element ‘g’ in the set.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Examples:
+-----------
+https://www.geeksforgeeks.org/list-cpp-stl/
+https://www.geeksforgeeks.org/set-in-cpp-stl/
+https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
+https://www.geeksforgeeks.org/sort-algorithms-the-c-standard-template-library-stl/
+
+
+please download exOnSequentialContainer.cpp,DerivedContainers.cpp,
+exOnAssociateContainer.cpp  from below github link
+
+https://github.com/sainathatheli/Raghavendra
