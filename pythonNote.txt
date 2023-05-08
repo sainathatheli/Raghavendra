@@ -1,0 +1,1547 @@
+Python:
+=======
+
+Python is a cross-platform programming languae,which means that it can run on multiple platforms like windows,macos,linux, and has even been ported to java and .net virtual machines.
+
+It is free and open-source.
+
+Python is a popular programming language. 
+
+It was created by Guido van Rossum and released in 1991.
+
+It used for
+
+Web Development(server-side)
+
+
+Python Indentation:
+===================
+
+Indentation refers to the spaces at the beginning of a code line.
+
+The number of spaces is up to you as programmer.
+
+THe most common use is four , but it has be atleast one.
+
+
+Python Variables:
+=================
+
+Variables are containers for storing data values.
+
+In Python Variabls are created when you assin a value to it.
+
+ex:
+===
+
+x=5
+y="hello world" 
+
+
+Note:
+-----
+you can get the datatype of a variable with the type() function.
+
+
+x,y,z="orange","apple","kiwi"
+
+or
+
+x=y=z="banana"
+
+
+Datatypes:
+==========
+Python has following data types built-in by default.
+
+Texttype:     str
+
+NumericTypes:  int,float,complex(real+img)
+
+SequenceTypes:  list,tuple,range
+
+Mapping Type :  dict
+
+Set Types :  set, frozenset
+
+Boolean Types : bool(True or False)
+
+BinaryTypes: bytes,bytearray.
+
+
+If you want to specify the datatype,you can use the constructors functions.
+
+ex:
+---
+
+x=str("hello")
+x=int(10)
+x=complex(1j)
+x=float(20.5).
+
+
+Note:
+====
+Casting in python is therefore done using constructors functions
+
+int()
+float()
+str()
+
+
+String:
+=======
+
+String in python enclosed in single quotation or double quotation marks.
+
+ex:
+
+'hello' or "hello"
+
+
+Multiline strings:
+==============
+you can assign a multiline string to variable by using  three quotes.
+
+ex:
+===
+x=""" dafdaffafdasfsafdasfdasfadsfasfadsf
+adsfdafdasfadsf
+adfasfdafafafasfadsf
+dafafafafafaff"""
+
+print(x)
+
+
+String are Arrays:
+===================
+
+x="hello world"
+
+print(x[1]) //e
+
+
+String lenghth:
+=================
+
+to get the length of a string use the len() function
+
+ex:
+====
+x="hello"
+
+print(len(x)) //5
+
+
+
+Operators:
+----------
+Arithmetic operators:- are used to perform common mathematical operations
+
+
++   addition 
+
+-   substraction
+
+*   multiplication
+
+/   division   (it return qutioent)
+
+%   modulus  (it will return remainder)
+
+
+Assignement Operators:
+======================
+
+(=)Assignment operators are used to assgin values to variables.
+
+int x=10
+
+
+ex:
+==
+
+x=2;
+
++=   => x+=3   => x=x+3
+
+-=   => x-=3    => x=x-3 (5-3) 
+
+
+Comparsion Operators:
+=====================
+==      equal to    ex: a==b
+
+!=       not  equals to
+
+>        greater than   ex : a>b
+
+<       lesser than    ex: a<b
+
+>=      greater than or equal to ex: a>=b
+
+<=      less than or equal to     ex: a<=b
+
+
+Logical Operators:
+==================
+   
+
+and    logical and    => returns true if both statements are true
+
+or     logical or    => returns trun if one of the statments is true
+
+not    logical not   
+
+
+comments in python(#):
+======================
+
+# text
+
+
+In Python There are three forms of the if..else statement
+
+1)if statement
+
+2)if..else statement
+
+3)if ..elif ..else statement
+
+
+if statement syntax:
+====================
+if condition:
+	#body of if statement.//maintain indentation
+
+note:
+-----
+If condition is evaluated to true, the code inside the body of if is executed
+
+if condition is false , the code inside the body of if is skipped.
+
+
+
+if..else statement 
+===================
+
+syntax:
+-------
+
+if condition:
+	#block of code executed if condition is true
+else:
+	#block of code executed if condition is false.
+
+
+
+if ..elif ..else statement
+=========================
+syntax:
+--------
+ 
+if condition1:
+	#block of code executed
+
+elif condition2:
+	#block of code executed
+
+else:
+	#block of code executed
+
+
+note:
+-----
+if condition1 is true then if block of code executed ,if false to go to 
+condition2, if condition2 is true then elif block of code executed, if false
+then else block of code executed.
+
+
+
+Loops:
+======
+we can execute a set of statments as long as a condition is true
+
+Python has two oops.
+
+while loop
+for loop
+
+
+1)while loop:
+=============
+syntax:
+
+  initialization
+
+  while condition:
+	#block of code
+	#increment/decrement
+
+
+ex:
+---
+to print 1 to 10 numbers.
+2) print multiplication table of 5
+
+  5 X 1 =5
+,,,,,,,5X10 =50.
+
+
+break:
+======
+ The break statement we can stop the loop even if the while condition is true.
+
+
+continue:
+=========
+with the continue statment we can stop the current iteration(skipped) and continue with next iteration.
+
+
+While with else statement:
+==========================
+
+with else else statment we can run a block of code once when the condition is false.
+
+
+syntax:
+
+while condition:
+	#block of code
+      #increment/decrement
+
+else:
+      #block of code.
+
+For Loop:
+========
+ A for loop is used for iterating over a sequence containers.
+(that is either a list,a tuple,a dictionary, a set or a string)
+
+
+syntax:
+-------
+for variable in string/list/tuple/set:
+  print(variable)
+
+
+
+range() function:
+=================
+
+the range() function returns a sequence of numbers,starting from 0 by default,and increment
+by 1 *by default)and end at specified number.
+
+ex:
+===
+               
+for x in range(1,6):
+     print(x)  # it will print  
+                         1 2 3 4,5  i.e, end specified number not included
+                        by default it will increment by 1
+
+
+
+range(int start,int end,increment by value)
+  
+
+ex:
+===
+
+for x in range(1,4):
+	print(x)
+
+else:
+   print("else statement will be executed")
+
+
+
+Python Collections:
+==================
+
+List: is a collection of elements,which is ordered(inseration order) and changeable,indexed. Allows duplicate elements. =>[]
+
+Tuple: is a collection which is ordered and unchangable,indexed. Allows duplicate elements =>()
+
+Set : is a collectionof elements which is unordered,changeable and unindexed. No duplicates =>{}
+
+Dictionary:  is collection of elements which is ordered and changeable. No duplicates and indexed(based on keys) =>{key:value}
+
+
+NoteL
+-----
+in python 3.7 version dictionaries are ordered.
+
+python 3.6 and earlier dictionaries are unordered.
+
+
+
+
+Functions:
+==========
+we declare functions in python using def keyword
+
+functions are used to perform specific task.
+
+syntax:
+-------
+def functionname(if any parameter):
+    #statements
+
+
+The pass Statement:
+===================
+function definitions cannot be empty, but if you for some reason have a function definition with no content, 
+put in the pass statement to avoid getting an error.
+
+
+To read the data from the keyboard in python:
+============================================
+will use input()
+
+
+Assignment:
+============
+1)Write a Python program to count the number of even and odd numbers in a series of numbers.
+  Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+ Expected Output :
+ Number of even numbers : 5
+ Number of odd numbers : 4
+
+
+2)Write a program that appends the square of each number to a new list.
+  Hint 1 
+Given x = [2,3,4,5,6,7,8]
+
+Expected output 
+Result: [4, 9, 16, 25, 36, 49, 64]
+
+3)Write a program to fetch only even values from a dictionary.
+Hint 1 
+dic = {‘val1’:10, ‘val2’:20, ‘val3’:23, ‘val4’:22 }
+
+Expected output 
+Result : 10 20 22
+
+4)Accept two numbers from the user and return their sum, multiplication and division.
+Hint
+Input:
+a = 30
+b = 10
+
+Expected Output:
+Sum is 40
+Multiplication is 300
+Division is 3
+
+5)Define a function in python that accepts 3 values and returns the maximum of three numbers.
+Hint
+Input:
+Value of a = 30
+Value of b = 22
+value of c = 18
+
+Expected output 
+30 is the maximum among all
+
+
+
+Modules:
+========
+
+A group of functions,variables and classes saved into a file, which is nothing but
+module.
+
+Every Python file(.py) will act as a module.
+
+Ex:
+===
+ exOnfirst.py
+---------------
+x=888
+
+def addition(a,b):
+    print("The sum ",a+b)
+
+def methodOne():
+	print("we are in method One ")
+
+
+1)exOnfirst.py moudule contains one variable and 2 functions
+2) if we want to use memebers of module in our program then we should
+   import that module.
+   syntax:
+    import modulename
+
+3) we can access members by using modulename.
+
+   modulename.variable
+   modulename.function()
+
+
+Ex:
+---
+test.py
+-------
+import exOnfirst   #importing module
+
+print(exOnfirst.x)   //calling a variable from module
+
+exOnfirst.addition(10,20) //calling afucntion from module
+   
+
+Renaming a module at the time of import (Module aliasing)
+---------------------------------------------------------
+
+test1.py
+--------
+
+import exOnfirst as enf  
+
+#here exOnfirst is original module name and enf is alias name.
+#we can access members by using alias name enf
+
+print(enf.x)
+
+enf.addition(30,20)
+enf.methodOne()
+ 
+
+from..import
+=============
+we can import particular or specific members(variables and functions) of module by using from modulename import
+the main advantage of this is we can access memmbers directly without using module name.
+
+case1:
+======
+import only x,addition from exOnfirst module in our program
+
+test2.py:
+---------
+from exOnfirst import x,addition
+
+print(x) 
+
+addition(30,60)
+
+methodOne() # NameError:name 'methodOne' is not defined.
+
+
+Note:
+=====
+to access all members(variable and functions) from module.
+
+from exOnfirst import *
+
+#accessing the variable and fucntions with out modulename ,i.e direclty we can access it.
+
+
+Member Aliasing:
+================
+test3.py
+----------
+
+from exOnfirst import x as a,addition as sum
+
+print(a)
+sum(10,30)
+
+Note:
+=====
+once we defined as alias name, we should use alias name only and
+we should not use original name.
+
+
+Finding Members of module by using dir() function:
+--------------------------------------------------
+python provides inbuilt function dir() to list out all members of
+current module or a specified module.
+
+dir() --> to list out all members of current module
+dir(modulename) --> to list out all members of specified module.
+
+
+Built in modules:
+-----------------
+math module
+random..
+
+Python provides inbuilt module math.
+this module defines several functions which can be used for mathematical operations
+
+The main import functions are :
+
+sqrt()
+ceil()
+floor()
+sin()
+tan()
+abs()
+......
+
+
+Note:
+-----
+For every module at time of execution python interpreter will add some 
+special properties automatically for internal use.
+
+Eg:
+---
+__builtins__,__cached__,__filed__,__loader__,__name__,__package__,__spe__...
+
+Based on our requirement we can access these properties also in our program.
+
+
+The Special variable __name__:
+------------------------------
+For every pytoh program a special variable __name__ will added internally.
+
+This variables stores information regarding whether the program is executed as in individual
+program or as module.
+
+if the program executed as an individual program then the value of the variable(__name__)
+is __main__
+
+if the program executed as a module from some other program then the value of this variable(__name__)
+is the name of module where it is defined.
+
+Hence by using __name__ variable we can identify whether the program executed directly or as a module.
+
+
+demo example:
+-------------
+
+myModule.py
+-----------
+
+def f1():
+	if __name__ == '__main__':
+          print("The code is executed as a individual program(direct)"
+     else:
+          print("the code executed as a module from some other program")
+
+
+print(__name__)
+
+
+Packages:
+=========
+
+It is mechanism to group related modules into a single unit.
+
+Package is nothing but folder or directory which represents collection of python modules.
+
+Any folder or directory contains __init__.py file , is considerd as a python package.
+This __init__.py file can be empty.
+
+A package can contain sub packages also.
+
+The main advantages of package statements are:
+1) we can resolve naming confilcts.
+2) we can identify our components uniquely.
+3) it improves modularity of the application.
+
+
+OOps:
+-----
+
+class:
+-----
+In Python every is an object. To create objects we required some model or plan
+or blue print which is nothin but class
+
+We can write a class to represent properties and actions of object
+
+Properties can be represent by variables.
+
+Actions can be present by functions.
+
+How to define a class:
+----------------------
+we can define a class by using class keyword.
+
+syntax:
+-------
+class className:
+   variables
+   methods/functions
+
+Ex:
+----
+
+class Student:
+      variables
+      functions
+
+object:
+=======
+Pysical existence of a class is nothing but object.
+we can create any number of  objects for a class
+
+syntax: to create object:
+=========================
+referencevariable = classname()
+
+ex:
+---
+s=Student()
+
+
+self variable:
+==============
+self is the default variable which is always pointining to current object.
+
+By using self we can access instance variables and instanc methods of object
+
+Note:
+-----
+1) self should be first parameter inside constructor.
+    def __init__(self):
+        #initialze the variables
+
+2) self should be first parameter inside instance methods/functions.
+
+     def display(self):
+         #code 
+
+
+Types of variables:
+==================
+Instance variables(object level)
+static variables(class level variables)
+Local variables(Method level variables)
+
+Instance variables:
+===================
+1)If the value of variable is varied from object to object,then such type of variables are
+called instance variables.
+
+2) For Every object a separate copy of instance variables will be created.
+
+Declare instance variables:
+==========================
+1)Inside Constructor by using self variable.
+2)Inside instance method by using self varaible
+3)outside the class by using object reference variable.
+
+
+Local variables:
+================
+Sometimes to meet temporary requirements of programmer,we can declare
+variables inside a method/function directly such type of variables are called locak variable
+
+local variables will ber created at the time of method execution and destroyed once
+method execution completes
+
+local variables of a method cannot be accessed from outside of method.
+
+
+Static variables:
+=================
+if the value of a variable is not varied from object to object, such type of variables
+we have to delcare with in the class direclty but outside of method.Such type of
+variables are called static variables
+
+For total class only once copy of static variable will be created and shared by all
+objects of the class
+
+we can access static variables either by classname or by object reference.
+But recommended is to use classname.
+
+
+
+
+static methods:
+===============
+
+In general these method are utility methods.
+
+inside these methods we won't use any instance or class variables(cls)
+
+Here we won't provide self or cls arguments at time of declaration
+
+we can declare static method explicitly by using @staticmethod decorator
+
+we can access static methods by using classname or object reference.
+
+Inheritance:
+============
+The method of inheriting the properties of parent class into a child class is known as inheritance. It is an OOP concept. Following are the benefits of inheritance.
+
+Code reusability- we do not have to write the same code again and again, we can just inherit the properties we need in a child class.
+
+It represents a real world relationship between parent class and child class.
+
+It is transitive in nature. If a child class inherits properties from a parent class, then all other sub-classes of the child class will also inherit the properties of the parent class.
+
+
+syntax:
+=======
+
+class Base:
+    #code 
+
+
+class Derived(Base):
+    #code                  #inherit the members from Base(parent) class to Derived class(child)
+
+
+Note:
+-----
+In multiple inheritance:
+========================
+if the same method is available in both Parent class(p1,p2), 
+then python will consider the order of parent classess in the declaration of the child Clas
+
+class C(P1,P2)   ==>P1  method will be considered
+class C(P2,P1)   ==>P2 method will be considered.
+
+
+
+1)What is use of del keyword?
+2)how to delete an object using del keyword with example?
+3)how to delete an intance variable(self) using del keyword?
+4)how to delete an static variable(class) using del keyword?
+5)three examples on inheritance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exception Handling
+------------------
+
+An exception is an unexpected event which disturbs normal flow of program.
+
+An exception is an unexpected event that occurs during program execution .
+
+
+Errors:
+-------
+Errors represent condtions such as compilation error,syntax error,error in the logic part of the code
+library incompatibility..etc
+
+Exceptions:
+-----------
+Exceptions can be caught and handled by the program
+
+To handle exceptions in python , we use the try..except block
+
+The try..except block is used to handle exceptions in python.
+
+syntax:
+-------
+try:
+
+   #code that may cause exception
+
+except: 
+   #code to run when exception occurs.
+
+
+try with else clause:
+=====================
+In some situtations ,we might want to run a certain block of code it the code block
+inside try runs without  any errors.
+
+For these cases, you can use the optional else keyword with the try statment
+
+syntax:
+------
+try:
+ #block of code executed with out error then else block will be executed
+
+except:
+  #error handling code
+  
+else:
+  #certain block of code.
+
+
+
+try finally:
+============
+IN python, the finally block is always executed no matter whether there is an
+exception or not
+
+the finally block is optional
+
+And ,for each try block ,there can be only once finally block
+
+
+syntax:
+-------
+
+try:
+    #block of business logic
+
+except:
+    #here caught the exceptions
+
+finally:
+     # the block will execute exception occured or not
+
+
+Custom Exceptions(or) User Defined Exceptions:
+==============================================
+some time we have to define and raise exceptions explicitly to indicate that something
+goes worng,such type of exceptions are called customized exception or userdefined exception.
+
+How to define custom exception:
+===============================
+1)Every exception in python is class that inherits from Exceptionclass either direclty or
+indirectly
+
+2)We can define custom exceptions by creating a new class that derived from the built-in Exception class.
+
+3) we can explicitly the raise exception with help of raise keyword.
+
+syntax:-
+----------
+
+class  classname(Exception):
+    def __init__(self,arg):
+         self.msg=arg
+
+
+
+Files:
+------
+A file is container i computer storage devices used for storing data.
+
+when we wan to read from or write to file, we need to open it first.
+
+when we are done, it need to closed it.
+
+file operations::
+------------------
+
+Open a file 
+
+Read or Write (perform operation)
+
+Close the file.
+
+syntax:
+-------
+
+f = open(filename,mode)
+
+mode are:
+---------
+1) r -> open an existing file for read operation.
+        open file doesnot exist then we will get FileNotFoundError.
+
+2) w ->open an existing file for write operation.  
+       if the file already contain somedata then it will be overridden.
+       if the specified file is not exist then this mode wil create that file.
+
+3)a  -> open an existing file  for append oepration.
+	if the file already contain somedata then it will be not overridden.
+
+ex:
+===
+
+f =open("abc.txt","w")
+
+hee we are opening abc.txt file for writing data.
+
+closing a file:
+===============
+
+Affter completing our operations on the file.
+it is highly recommended to close the files.
+
+f.close().
+
+Writing Data to Text Files:
+---------------------------
+We can write character data to the text files by using the following functions.
+1)write(str)
+2)writelines(list of line)
+
+
+ex:
+---
+Create a file abcd.txt and write some data into it.
+
+Reading Character Data from Text files:
+=======================================
+we can read character data from the text file by using following functions/methods
+
+1)read()  ==> to read total data from the file
+2)read(n) ==> to read 'n' characters from the file
+3)readline() => to read only one line
+4)readlines() => to read all lines into a list
+
+
+Ex:1
+======
+To read total data from the file.
+
+
+How to check a particular file exists or not?
+=============================================
+we can use os library to get information about files in our computer
+os modulehas path sub module,which contains isfile() function to check
+whether a file exists or not?
+
+os.path.isfile(name)
+
+Ex:
+====
+Write a program to check whether the given files exist or not.
+if it is exists read and print.
+
+The with Statement:
+====================
+The with statement can be used while opening a file.We can use this to group file 
+operation statements within a block.
+
+The advantage of with statement is it will take care closing of file,after completing all 
+operations automatically even in the case of exceptions also, and we are not required 
+to close explicitly.
+
+ex:
+---
+with open("abc.txt","w") as f: 
+ f.write("hello how are you") 
+ f.write("working with with") 
+ f.write("welcome to python") 
+ 
+
+Handling Binary Data:
+====================
+It is very common requirement to read or write binary data likes images,videos,audiofiles,csv..etc
+
+
+1)program to read image file and write to a newimage file.
+
+read the image f1.jpg from desktop location to python workspace directory.
+
+
+
+Handling CSV Files:
+===================
+
+csv --> comma separated values
+
+As the programming ,it is very common requiremet to write and read data wrt
+csv files.
+
+python provides csv module to handle csv files.
+
+Example:
+-------
+writing data to CSV file
+ex:
+--
+import csv
+
+with open("C:\\Users\\sainath\\Desktop\\emp.csv","w",newline="") as f:
+   wt =csv.writer(f) #writer will return csv writer object
+   wt.writerow(["ENO","ENAME","ESAL","EADDR"])
+   wt.writerow(["1001","smith","4000","chennai"])
+   
+print("Data is written into a csv file")
+
+
+
+Reading CSV file:
+=================
+import csv
+
+f = open("C:\\Users\\sainath\\Desktop\\empdata.csv","r")
+rd =csv.reader(f) #return csv reader object
+
+data = list(rd)
+#print(data)
+print("Reading the data from the CSV file")
+for line in data:
+    for word in line:
+        print(word,"\t",end="")
+    print()
+
+
+Assignment:
+============
+
+1)Write program to print the number of lines,words and characters present in the given file?
+2)Search For seek() and tell() functions in python
+3)What is Pickiling and Unpicking of objects.
+4)write a program to read the PDF file 
+5)write a program to write the PDF File
+
+Python generator:
+=================
+Python provides a generator to create your own iterator function. 
+A generator is a special type of function which does not return a single value, instead, it returns an iterator object with a sequence of values. 
+
+In a generator function, a yield statement is used rather than a return statement.
+
+We can define using the def keyword, but instead of the return statement we use the
+yield statement.
+
+syntax:
+=======
+
+def generator_name(arg):
+   #statements
+   yield  #something a sequence of values.
+
+
+python Generator Expression :
+=============================
+
+It is similar to list , but instead of creating a list, it creates a
+generator object that can be iterated over to produce the values in the generator.
+
+syntax:
+-------
+(expresssion for item in iterable)
+
+
+Pipelining Generators:
+-----------------------
+Multiple generators can be used to pipeline a seris of operations.
+
+suppose we have a generator that produces the number in the Fibonacci series .
+
+And we have anothor generator for squaring numbers.
+
+then we can find out the sum of squares of numbers in the Fibonacci Series.
+
+
+Pandas:
+======
+Pandas is python  library used for working with data a sets.
+ 
+it has functions for analyzing ,cleaning,exploring and manipulating data.
+
+how to install pandas library.
+=============================
+pip install pandas
+
+
+
+Named Index:
+============
+
+with the index argument,you can name your own indexes.
+
+syntax:
+-------
+pd.DataFrame(data,index=[row1,..rown]
+
+
+Write a Python program to read a file line by line and store it into a list
+Write a Python program to read a random line from a file
+Write a Python program to assess if a file is closed or not
+
+
+Web scraping in python
+=======================
+Python Web scraping is nothing but the process of collecting data from the web.
+
+Web scraping in Python involves automating the process of fetching data from the web. 
+
+In order to fetch the web data, all we need is the URL or the web address that we want to scrape from. 
+The fetched data will be found in an unstructured form. 
+
+In order to make use of the data or collect useful insights from it, we transform it into a structured form. 
+
+Once converted into a structured form, we need to store the data for further processing. The whole process is called web scraping.
+
+There are different ways to scrape websites such as online Services, APIs or writing your own code
+
+Some of the industrial applications of web scraping:
+====================================================
+Let us discuss for what business scenarios web scraping can be used.
+
+Data Science:
+=============
+For learning Data Science, we need large amounts of data. Web scraping Python can fulfill this requirement.
+
+Market Research
+===============
+Before launching a product or service, companies can study the market in advance with the help of web scraping.
+
+Tracking Competitive Pricing:
+=============================
+Web scraping Python can help study the service or product pricing of the competitors to stay ahead in the market.
+
+Monitoring Brand Value
+========================
+Web scraping can be used in order to build brand intelligence and monitor how customers feel about a product or a service.
+
+Lead Generation
+===============
+With the help of web scraping, businesses can grow their lead generation by gathering contact details of businesses or individuals.
+
+Setting up Python Web Scraper:
+==============================
+We will be using Python 3 and Jupyter Notebook throughout the hands-on.
+We will be importing two packages as well.
+
+For performing HTTP requests: Import Python requests
+For handling all of the HTML processing: Import BeautifulSoup from bs4
+and other libraries.
+
+
+
+pip install requests.
+
+pip install beautifulsoup4
+
+pip install selenium
+
+pip install lxml
+
+
+Example:
+--------
+A step by step on python webscraping a Wikipedia Page ,
+will be scraping the Woikipedia page to fetcg the list of indian billionaires.
+
+URL :- https://en.wikipedia.org/wiki/List_of_Indians_by_net_worth
+
+SOL:
+===
+
+Step 1: Fetch the webpage and convert the Html page into text with 
+        the help of the Python request library.
+
+#import python request library
+
+import requests
+
+#Specify the Url we want to scrap the list of indian billionaries.
+
+Link = "https://en.wikipedia.org/wiki/List_of_Indians_by_net_worth"
+
+#convert the webpage to text
+
+   Link_text =requests.get(Link).text
+   print(Link_text)
+
+
+step 2:
+======
+
+IN order to fetch useful information  convert Link_text (which  is of string datatype) into a
+BeautifulSoup Object.
+
+#import BeautifulSoup library to pull data out of html and xml files.
+
+from bs4 import BeautifulSoup
+
+#to convert Link_text into BeautifulSoup object
+ 
+soup = BeautifulSoup(Link_text,'lxml')
+
+print(soup)
+
+
+step3:
+======
+#with the help of the prettify() function make the indentation proper.
+
+#make the indentation proper
+
+print(soup.prettify())
+
+
+step 4:
+=======
+To fetch webpage title, use soup.title
+
+#to take a look at the title of the webpage
+
+print(soup.title)
+
+
+step 5:
+=======
+we want only string part of the tile not the tags.
+
+#Only string  not the tags
+print(soup.title.string)
+
+....
+
+Step 6:
+========
+Explore all <a> </a> tags
+
+print(soup.find_all('a'))
+
+
+step 7:
+=======
+Again ,just the way we fetched title tags. We will fetch all table tags.
+
+all_table = soup.find_all('table')
+
+print(all_table)
+
+
+step:8:
+========
+Now fetch all table tags with class name 'wikitable sortable'
+
+our_table = soup.find('table',class_='wikitable sortable')
+
+print(our_table)
+
+
+step 9:
+-------
+we can see that the information that we want to retreive from table has <a> tags in them.
+so find all the <a> tags from table_links
+
+table_links=our_table.find_all('a')
+
+print(table_links)
+
+step 10:
+========
+
+In order to put the title on a list,iterate  over table_links and append on the title using
+the get() function
+
+#put the title into a list
+billionaries =[]
+
+for links in table_links:
+	billionaries.append(links.get('title'))
+
+print(billionaries)
+
+step 11:
+========
+#convert the list into a dataframe using pandas
+
+import pandas as pd
+
+df =pd.DataFrame(billionaries)
+
+print(df)
+
+step12:
+-------
+Use the follwoing method to write data into an csv file.
+
+df.to_csv(filename.csv)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
