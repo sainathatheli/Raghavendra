@@ -1,0 +1,114 @@
+
+step1:
+======
+create a directory to store all your project related webpages.
+in default location /var/www/
+
+Example:
+--------
+a)create folder(directory) named as abc.com/public_html/
+b)create index.html and include some html code.
+
+
+
+step2:
+------
+Change user permission 
+
+sudo chown -R $USER:$USER /var/www/abc.com/public_html
+
+sudo chmod -R  755 /var/www
+
+
+
+step3
+------
+Create a conf based on foldername(company folder) 
+to be create in /etc/apache2/sites-available/
+
+sudo nano abc.com.conf
+
+ex:
+---
+
+abc.com.conf
+------------
+<VirtualHost *:80>
+
+    ServerAdmin admin@abc.com
+    ServerName  abc.com
+    ServerAlias www.abc.com
+    DocumentRoot /var/www/abc.com/public_html
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+step4:
+-----
+we can enable the conf file(abc.com.conf) and 
+disable the default conf file(000-default.conf)
+
+cmd:
+----
+enable:
+-------
+sudo a2ensite abc.com.conf
+
+disable:
+-------
+sudo a2dissite 000-default.conf
+
+once enabled or disabled restart the apache2 server
+
+cmd:
+----
+sudo systemctl reload apache2
+or 
+sudo systemctl restart apache2
+
+step5:
+------
+to check your conf file is valid or not
+cmd:
+----
+sudo apache2ctl configtest
+
+step 6:
+=======
+check to add current ipaddres to  ServerName
+open /etc/hosts file and 
+
+add IPaddress and ServerName
+
+a) get the ipaddress using command ifconfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
