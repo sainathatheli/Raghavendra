@@ -1,0 +1,40 @@
+UNix or LINUX CaseStudy Questions:
+==========================
+1) Sort the given numbers in the given order, i.e., either in ascending or descending order.
+
+2) Write a shell script to compare two strings input by the user for equality.
+
+3) Write a shell script to find out the location of an input character into an input string
+
+4) Write a shell script to count the number of characters, words, spaces in a given text.
+
+5)Write a shell script to perform following tasksa. Display the present working directory.
+b. Clear the screen.
+c. Display the current date.
+d. Make a directory with its -directory d1.
+e. Change the directory to the directory having sub directory d1.
+f. Create two files (say file1 & file2) within this.
+g. Provide appropriate security options to these files.
+h. List the contents of directory
+
+6)The marks obtained by a student in five different subjects are input through the keyboard. The student 
+gets a division as per the following rules. (Using else's clause).
+if percentage greater than or equal to 60 get First division
+if percentage greater than or equal to 50 or less than 60 get Second division
+if percentage greater than or equal to 40 or less than 50 get Third division
+if percentage less than 40 Fail
+
+7)How will you copy a file "abc.doc" present in current directory to a directory "abc2" present in the parent 
+directory?
+
+8)Write a shell script to search a file in current directory.
+
+
+9)Write a menu driven program which has following option-
+(a) Factorial of a number
+(b) Prime or not
+(c) Odd or even
+(d) Exit
+
+10) Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour 
+for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour
