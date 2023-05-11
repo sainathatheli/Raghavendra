@@ -1,0 +1,50 @@
+What are cron, cron job, and crontab:
+=======================================
+Cron is a system that helps Linux users to schedule any task. However, a cron job is any defined task to run in a given time period. It can be a shell script or a simple bash command. Cron job helps us automate our routine tasks, it can be hourly, daily, monthly, etc.
+
+Note: in most of Linux system, we must get a permission of system administrator before defining a spesific cron job that is listed on crontab
+
+Meanwhile, the crontab stands for cron table. It is a Linux system file that contains a list of the cron job. 
+We define our task — bash command, shell script, Python script, etc scheduled in crontab.
+
+# Check cron service on Linux system
+====================================
+sudo systemctl status cron.service
+
+
+cron job syntax
+===============
+It’s time to learn about cron job syntax on crontab.
+
+crontab -a <filename>: create a new <filename> as crontab file
+crontab -e: edit our crontab file or create one if it doesn’t already exist
+crontab -l: show up our crontab file
+crontab -r: delete our crontab file
+crontab -v: show up the last time we have edited our crontab file
+
+Syntax of crontab (field description):
+=======================================
+
+*     *     *     *     *  YOURCOMMAND
+-     -     -     -     -
+|     |     |     |     |
+|     |     |     |     +----- Day in Week (0 to 7) (Sunday is 0 and 7)
+|     |     |     +------- Month (1 to 12)
+|     |     +--------- Day in Month (1 to 31)
+|     +----------- Hour (0 to 23)
++------------- Minute (0 to 59)
+
+
+There are some shorts, too (if you don´t want the *):
+=====================================================
+@reboot --> only once at startup
+@daily ---> once a day
+@midnight --> once a day at midnight
+@hourly --> once a hour
+@weekly --> once a week
+@monthly --> once a month
+@annually --> once a year
+@yearly --> once a year
+
+
+
