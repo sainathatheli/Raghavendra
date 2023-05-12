@@ -1,0 +1,440 @@
+PHP:
+====
+Introduction to PHP:
+
+PHP is a server-side and general-purpose scripting language that is especially suited for web development.
+
+PHP originally stood for Personal Home Page. However, now, it stands for Hypertext Preprocessor. It’s a recursive acronym because the first word itself is also an acronym.
+
+PHP was created by Rasmus Lerdorf in 1994. It’s currently maintained by the PHP Development Team
+
+PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.
+
+PHP scripts can only be interpreted on a server that has PHP installed.
+
+The client computers accessing the PHP scripts require a web browser only.
+
+A PHP file contains PHP tags and save with the extension “.php”.
+
+What can PHP do:
+================
+PHP has two main applications:
+
+Server-side scripting – PHP is well-suited for developing dynamic websites and web applications.
+Command-line scripting – like Python and Perl, you can run PHP script from the command line to perform administrative tasks like sending emails and generating PDF files.
+The tutorials on this website mainly focus on server-side scripting.
+
+How PHP  Works flow:
+====================
+The following illustrates how PHP works:
+
+a) First, the web browser sends an HTTP request to the web server,     	e.g., index.php. e.g <?php  code ?>
+
+b) Second, the PHP preprocessor that locates on the web server processes PHP code to generate the HTML document.
+
+c)Third, the web server sends the HTML document back to the web browser.
+
+Installing PHP:
+===============
+Installing PHP on computer allows you to safely develop and test a web application without affecting the live system.
+
+To work with PHP locally, you need to have the following software:
+
+--> PHP
+--> A web server that supports PHP. We’ll use the Apache webserver.
+--> A database server. We’ll use the MySQL database server.
+
+Typically, you won’t install all this software separately because connecting them is tricky and not intended for beginners.
+
+Therefore, it’s easier to find an all-in-one software package that includes PHP, a web server, and a database server. One of the most popular PHP development environments is WAMP, XAMPP...etc.
+
+As a programming language, PHP has a set of rules that governs how you write programs.
+
+PHP code:
+========
+Like HTML, you need to have the opening tag to start PHP code:
+
+<?php
+
+If you mix PHP code with HTML, you need to have the enclosing tag:
+
+?>
+
+Define a varible:
+================
+
+A variable stores a value of any type . e.g: a string, a number,,a float,an array or an object.
+
+A Varaiable has a name and is associated with a value.
+
+syntax:
+========
+
+$variable_name =value;
+
+Note:
+=====
+The variable name must be start with the dollar sign($)
+
+var_dump() is function that allows you to dump the information about a variable.
+
+DataTypes:
+==========
+
+boolean
+integer
+float
+string
+null
+
+
+conditional Statements:
+======================
+
+if:
+===
+
+the if statement executes a statement is a condition evaluates to true.
+
+Do use the pattern if (value == $variable_name){} to avoid possible mistakes.
+
+syntax:
+=========
+
+if(condition){
+
+ //statements block of code will execute if condition is true.
+
+}
+
+
+if..else:
+=========
+
+if..else statement to execute a code block when condition is true ,
+if not else block will be executed.
+
+syntax:
+-------
+
+if(condition){
+   //block of code executed if condition is true
+
+}else {
+
+   //code to execute if condition is false
+}
+
+
+
+if..elseif
+===========
+if..elseif statement to evaluate multiple expression and execute code blocks conditionally.
+
+syntax:
+=======
+
+if(condition1){
+  //code to execute if conditio1 is true
+}elseif(condition2){
+  
+//code to execute if conditio2 is true
+
+}else {
+   //code to execute if conditio1 and condition2 is false
+
+}
+
+
+Loops:
+======
+
+while:
+------
+
+The while statement executes a code block as long as an expression is true. 
+The syntax of the while statement is as follows:
+
+<?php
+
+while (expression) {
+	statement;
+}
+
+?>
+
+for loop:
+=========
+The for statement allows you to execute a code block repeatedly. 
+The syntax of the for statement is as follows:
+
+<?php
+
+for (start; condition; increment) {
+	statement;
+}
+
+?>
+
+
+Example:
+=========
+
+create a php program to print multiplication table of 5.
+
+
+foreach:
+===========
+PHP provides you with the foreach statement that allows you to iterate over elements of an array, 
+either an indexed array or an associative array.
+
+The foreach statement iterates over all elements in an array, one at a time.
+It starts with the first element and ends with the last one. 
+
+syntax for indexed array:
+=========================
+<?php
+
+foreach ($array_name as $element) {
+    // process element here
+}
+
+syntax for associative array:
+=============================
+
+<?php
+foreach ($array_name as $key => $value) {
+   //process element here;
+}
+
+
+arrays in php:
+==============
+
+In php, we can use the array() constructor or
+[] syntax to define an array. 
+
+1)Creatin array using array() construct:
+========================================
+
+ //empty array
+
+$arr_1 = array()   
+
+
+//declare and initialize
+
+$arr_2 = array(10,40,50,20)
+
+
+2)Creating an array using [] syntax:
+====================================
+//empty array
+
+$arrr_3 =[]
+
+//decalre and initialize
+
+$arr_4 = [30,20,5,50]
+
+Displaying arrays:
+=======================
+
+to show the contents of an array , use var_dump() .
+
+
+
+Associative Arrays:
+=====================
+Associative arrays are arrays that allow you to keep track of elements by names rather than by index.
+$[key]=value
+ex:
+===
+
+$ht =[]; //declaring an array
+
+$ht['title'] = 'php arrays'
+$ht['description'] ='learn how to use arrays'
+
+print_r($ht) //internal information will display 
+
+
+functions:
+=========
+A function is named block of code that performs a specific task.
+
+Use return statement to return a value from a function.
+
+//built-in functions we have var_dump(),print_r()
+
+syntax:
+========
+funtion funtion_name(if any parameters){
+  //to be executed
+}
+
+calling function:
+----------------
+
+functionName(any parameter);
+
+ex:
+===
+
+function student_details(){
+
+}
+
+
+Note:
+======
+When we use default parameters , it's a good practice to place them after the parameters.
+
+
+PHP MYSQL:
+==========
+PHP 5 and later can work with a mysql database using
+
+
+1)MYSQLi extension("i" stands for improved)
+2)PDO(PHP Data Objects)
+
+
+Should I USE MYSQLi or PDO ?
+
+1)PDO will work on 12 different database systems.
+
+2)MYSQLi will only work with mysql.
+
+---------------------------------------
+
+1) MYSQLI (object oriented):
+--------------------------
+
+$username
+$password
+$database
+$hostname
+
+<?php
+
+$hostname='localhost';
+$username='root';
+$password ='root';
+
+//create the connection
+
+   $conn =  new mysqli($hostname,$username,$password);
+
+//check connection is established or not 
+
+if( $conn-> connect_error){
+  die("connection failed : " . $conn->connect_error);
+}
+
+echo "Connected successfully ";
+
+?>
+
+2MYSQLI (Procdeural):
+--------------------------
+
+$username
+$password
+$database
+$hostname
+
+<?php
+
+$hostname='localhost';
+$username='root';
+$password ='root';
+
+//create connection
+
+$conn = mysqli_connect($locahost,$username,$password);
+
+//check connection established to database or not
+
+if(!$conn){
+
+ die("connection failed: " . mysqli_connect_error())
+}
+
+
+echo "Conencted successfully";
+
+
+?>
+
+
+
+to close connection in 1stway: MYSQLi(object oriented)
+================================
+$conn -> close();
+
+to close connection in 2ndway:MYSQLi(procedural)
+================================
+mysqli_close($conn)
+
+
+Ex1:
+====
+1) create table named as employee(empid,ename,sal)
+
+create table employee(empid int primary key,ename varchar(30),sal decimal);
+
+
+
+
+Assignment:
+===========
+Complete the code and paste in document
+
+1)PHP OBJECTS
+
+2)FORMHANLING USING $_POST $_GET
+PHP Form
+PHP filter_has_var
+PHP filter_var
+PHP filter_input
+Form Validation
+PHP Checkbox
+Multiple Checkboxes
+Radio Button
+Select Option
+a)what is Cross-site scripting (XSS)?
+3)Difference Between $_POST $_GET
+4)Self form page using $_SERVER["PHP_SELF"]
+5)isSet()
+6)htmlspecialchars()
+7)
+
+Filehandling:
+============
+FILE I/O
+Open a File
+Check a File Exists
+Read a File: fread() & fgets()
+Read a File into a String: file_get_contents()
+Download a File
+Create Temp File
+Copy a File
+Delete a File
+
+8)MYSQL EXERCISE
+
+a)using MYSQLi(object Oriented) //firstway
+execute all four operations(insert,update,delete,select)
+
+b)using PDO(PHP Data Objects)
+execute all four operations(insert,update,delete,select)
+
+
+
+
+
+
+
+
+
